@@ -1,26 +1,33 @@
-Linux-Process-API-fork-wait-exec-
+# Linux-Process-API-fork-wait-exec-
 Ex02-Linux Process API-fork(), wait(), exec()
-
-Ex02-OS-Linux-Process API - fork(), wait(), exec()
+# Ex02-OS-Linux-Process API - fork(), wait(), exec()
 Operating systems Lab exercise
 
-AIM:
+
+# AIM:
 To write C Program that uses Linux Process API - fork(), wait(), exec()
 
-DESIGN STEPS:
-Step 1:
+# DESIGN STEPS:
+
+### Step 1:
+
 Navigate to any Linux environment installed on the system or installed inside a virtual environment like virtual box/vmware or online linux JSLinux (https://bellard.org/jslinux/vm.html?url=alpine-x86.cfg&mem=192) or docker.
 
-Step 2:
+### Step 2:
+
 Write the C Program using Linux Process API - fork(), wait(), exec()
 
-Step 3:
-Test the C Program for the desired output.
+### Step 3:
 
-PROGRAM:
-C Program to create new process using Linux API system calls fork() and getpid() , getppid() and to print process ID and parent Process ID using Linux API system calls
+Test the C Program for the desired output. 
+
+# PROGRAM:
+
+## C Program to create new process using Linux API system calls fork() and getpid() , getppid() and to print process ID and parent Process ID using Linux API system calls
+
 Program:
 
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -37,9 +44,14 @@ int main() {
         wait(NULL); 
     }
 }
-##OUTPUT Screenshot 2026-05-01 094418
+```
+##OUTPUT
+<img width="505" height="244" alt="Screenshot 2026-05-01 094418" src="https://github.com/user-attachments/assets/75e28b92-c526-4a2c-afa3-a3b3f5416bba" />
 
-C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
+
+## C Program to execute Linux system commands using Linux API system calls exec() , exit() , wait() family
+
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -80,8 +92,11 @@ int main() {
     printf("Done.\n");
     return 0;
 }
+```
 ##OUTPUT
 
-Screenshot 2026-05-01 094736
-RESULT:
+<img width="542" height="211" alt="Screenshot 2026-05-01 094736" src="https://github.com/user-attachments/assets/4f0d1340-ec2b-4988-8f76-2639e4d6ad0a" />
+
+
+# RESULT:
 The programs are executed successfully.
